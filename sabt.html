@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from shahrdari.sarvinaa.ir/sabt by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Oct 2020 07:15:12 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ثبت درخواست</title>
+    <meta name="author" content="mohahamadZareaiRobat">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="img/bargh.png">
+    <!-- BEGIN: sweetALert-->
+    <link rel="stylesheet" href="sweetAlert/sweetalert2.min.css">
+    <!-- END: sweetALert-->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel="stylesheet" href="indexPage/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="indexPage/css/styles.css">
+    <link rel="stylesheet" href="indexPage/css/hamburgers.css">
+
+
+</head>
+<style>
+    .login {
+        background: rgba(0, 158, 179, 0.86);
+    }
+    
+    .login a {
+        color: #FFFFFF !important;
+    }
+</style>
+
+<!-- ? radloader Start -->
+<script src="js/myJq.js"></script>
+<script>
+    function accept() {
+        Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'با موفقیت ثبت شد',
+            text: 'کد پیگیری  : OGHKAYE95928',
+            showConfirmButton: true,
+            timer: false
+        }).then((result) => {
+            if (result.isConfirmed) {
+                location.replace('sabt.html');
+            }
+        })
+
+    };
+</script>
+<script>
+    $(document).ready(function() {});
+</script>
+
+<body>
+    <!-- radloader hanooz gozashte nashode -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="img/bargh.png" alt="">
+                </div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+    <!-- start nav va fix top baraye scroll -->
+
+    <nav class=" px-1 pt-2 fixed-top ">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <div class="hamburger hamburger--3dx-r ">
+            <div class="hamburger-box">
+                <div class="hamburger-inner">
+
+                </div>
+            </div>
+        </div>
+
+    </label>
+        <label class="logo">
+        <img src="img/bargh.png" alt="">
+    </label>
+        <ul class=" m-auto">
+            <li class="px-2">
+                <a href="index.html"> <i class="fa fa-home 4x"></i> صفحه اصلی</a>
+            </li>
+            <li class="px-2"><a href="#footer">خدمات</a></li>
+            <li class="px-2"><a href="#footer">ارتباطات</a></li>
+            <li class="px-2"><a href="#footer">درباره ی ما</a></li>
+            <li class="px-2 " style="">
+                <button class="login btn">
+                <a href="login.html">ورود
+                </a>
+            </button>
+            </li>
+        </ul>
+    </nav>
+    <!-- End nav -->
+    <section class="banner">
+        <div class="text-shahrdari ">
+            <h1 class="text-shahrdari__radstyle mx-auto">سامانه خدمات از راه دور مشترکان برق</h1>
+        </div>
+
+
+        <div class="background-center">
+
+            <div class="example1">
+                <h3>
+                    <span>پل ارتباطی شهروندان با مسئولین شهری</span> </h3>
+            </div>
+        </div>
+    </section>
+    <!-- start section -->
+    <section class="main">
+
+
+
+        <div class="image-backgroundsabt" style="height:auto;">
+            <div class="container py-5" style="direction: rtl;">
+                <!-- <div class="row heading-bg" id="head-row">
+           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ">
+            <h5 class="txt-dark">درخواست های جدید </h5> -->
+
+                <div class="col-sm-12 mt-4">
+                    <div class="panel panel-default card-view" style="padding: 20px;background: #fff;border: 1px solid #ccc;">
+                        <div class="panel-wrapper collapse show">
+                            <div class="panel-body ">
+                                <div class="form-wrap">
+                                    <div class="row">
+
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="text" id="reqCode" name="reqCode" class="form-control mt-2" value="OGHKAYE95928" placeholder="  کد رهگیری " title="فارسی تایپ کنید" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <input type="text" id="name" name="name" class="form-control mt-2" value="" placeholder="نام و نام خانوادگی" title="فارسی تایپ کنید" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="number" id="cell" name="cell" class="form-control mt-2" value="" placeholder="شماره همراه" title="فارسی تایپ کنید" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="number" id="phone" name="phone" class="form-control mt-2" value="" placeholder="شماره تلفن" title="فارسی تایپ کنید">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <select onchange="chooseTitle()" name="title_select" id="title_select" class="form-control mt-2" placeholder="انتخاب موضوع" required>
+                                                <option value="" disabled selected hidden>انتخاب موضوع</option>
+                                                                                                                                                            <option value=""></option>
+                                                                                                            <option value="آب گرفتگی">آب گرفتگی</option>
+                                                                                                            <option value="آسفالت">آسفالت</option>
+                                                                                                            <option value="اتوبوس">اتوبوس</option>
+                                                                                                            <option value="اجتماعی">اجتماعی</option>
+                                                                                                            <option value="افتادن درخت رو ماشین">افتادن درخت رو ماشین</option>
+                                                                                                            <option value="efefef">efefef</option>
+                                                                                                            <option value="nnnnn">nnnnn</option>
+                                                                                                            <option value="test">test</option>
+                                                                                                            <option value="پارک">پارک</option>
+                                                                                                            <option value="تابلو">تابلو</option>
+                                                                                                            <option value="تاکسی">تاکسی</option>
+                                                                                                            <option value="جدول گذاری">جدول گذاری</option>
+                                                                                                            <option value="چراغ راهنمایی">چراغ راهنمایی</option>
+                                                                                                            <option value="چمن">چمن</option>
+                                                                                                            <option value="خط کشی">خط کشی</option>
+                                                                                                            <option value="درخت">درخت</option>
+                                                                                                            <option value="رفتگری">رفتگری</option>
+                                                                                                            <option value="زباله برداری">زباله برداری</option>
+                                                                                                            <option value="ساختمان">ساختمان</option>
+                                                                                                            <option value="سد معبر">سد معبر</option>
+                                                                                                            <option value="سرعت گیر">سرعت گیر</option>
+                                                                                                            <option value="قثلثقلث">قثلثقلث</option>
+                                                                                                            <option value="گرفتگی جوی">گرفتگی جوی</option>
+                                                                                                            <option value="نخاله">نخاله</option>
+                                                                                                                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    <input type="text" id="title" name="title" class="form-control mt-2" value="" placeholder="موضوع پیام" title="فارسی تایپ کنید" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <select onchange="chooseMessg()" name="message_select" id="message_select" class="form-control mt-2" placeholder="انتخاب موضوع" required>
+                                                <option value="" disabled selected hidden> انتخاب متن پیام</option>
+                                            </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    <input type="text" id="message" name="message" class="form-control mt-2" value="" placeholder="متن پیام " title="فارسی تایپ کنید" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                            <div class="form-group">
+
+                                                <textarea id="address" name="address" row="3" class="form-control mt-2" style="height:80px !important; " placeholder="آدرس " title="فارسی تایپ کنید" required></textarea>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+
+                                                <input type="file" id="file1" name="file1" class="form-control mt-2" title="فارسی تایپ کنید">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                                            <div class="form-group">
+                                                <input type="file" id="file2" name="file2" class="form-control mt-2" title="فارسی تایپ کنید">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="file" id="file3" name="file3" class="form-control mt-2" title="فارسی تایپ کنید">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="file" id="file4" name="file4" class="form-control mt-2" title="فارسی تایپ کنید">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <style>
+
+                                    </style>
+                                    <div class="row" id="row_img" style="">
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 div_img" style="height: 150px">
+                                            <div id="image-holder1" class="img-holder">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 div_img" style="height: 150px">
+                                            <div id="image-holder2" class="img-holder"> </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 div_img" style="height: 150px">
+                                            <div id="image-holder3" class="img-holder"> </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 div_img" style="height: 150px">
+                                            <div id="image-holder4" class="img-holder"> </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row" style="margin-top: 10px">
+
+                                        <div class="col-lg-9 col-sm-9 col-md-9"></div>
+                                        <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <button type="submit" onclick="sabtDarkhast()" class="btn btn-info btn-icon left-icon mt-2 mr-10 pull-left" style="width: 100%">
+                                                <i class="fa fa-check"></i> <span>تایید</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End Section -->
+    <!--  Footer Start -->
+    <footer id="footer">
+        <div class="footer foot mx-auto" style="margin-top: 50px;">
+            <div class=" container-fluid ">
+                <div class="row ">
+
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="footerEnding ">
+                            <h4 class="footerEnding--text-head " id="khadamati ">خدمات ما</h4>
+                            <ul>
+                                <li><a href="# ">خدمات جدید</a></li>
+                                <li><a href="# "> خدمات</a></li>
+                                <li><a href="# ">خدمات دهی</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="footerEnding ">
+                            <h4 class="text-head ">لینک های مفید</h4>
+                            <ul class="exmenu ">
+                                <li><a href="https://www.post.ir/fa-IR/bojnoord.post/5361/page/صفحه-اصلی">پورتال شرکت ملی پست</a></li>
+                                <li><a href="http://www.bojnord-city.ir/">سامانه خدمات از راه دور مشترکان برق</a></li>
+                                <li><a href="http://nkhorasan.ir/">استانداری خراسان شمالی</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="footerEnding ">
+                            <h4>تماس با ما</h4>
+                            <p>آدرس : خراسان شمالی کیلومتر 5 جاده اسفراین پارک علم و فناوری خراسان شمالی</p>
+                            <p>کد پستی : 9453155402</p>
+                            <p>تلفن : 32247880 58 98+</p>
+                            <p>فکس : 32247880 58 98+</p>
+                            <p>پست الکترونیک : info@anypardaz.ir</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="footerEnding ">
+                            <h4 class="footerEnding--text-head " id="khadamati ">خدمات ما</h4>
+                        </div>
+                        <div class="iconR ">
+                            <ul>
+                                <li><a href="# "><i class=" fa fa-telegram "></i></a></li>
+                                <li><a href="# "><i class="fa fa-instagram "></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footerEnding ">
+
+                            <form class="signup-frmCustom mt-4 ">
+                                <input type="email " class="form-control sigmup-me " placeholder="انتقاد خود رو بنویسید " required="required ">
+                                <button type="submit " class="btn btn-primary "><i
+                                    class="fa fa fa-arrow-circle-o-left "></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr class="my-4 ">
+        <div class="footer-bottom my-5 ">
+            <div class="container ">
+                <div class="row align-items-center ">
+
+                    <div class="col-lg-12 col-md-12 text-center " style="direction: rtl; ">
+                        <p class="mb-0 "> طراحی شده توسط <a href="# ">شرکت صنعت الکترونیک قاره</a> کلیه حقوق محفوظ است. ©
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- endFooter -->
+
+
+    <!-- End RADshodam  -->
+
+
+    <!-- one & two & three bootstrapi . . . 4 for scroll  & 5 jaqurey for javascript page -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bundle.js"></script>
+    <!-- startloader -->
+    <script src="js/loader.js">
+    </script>
+    <!-- endloader -->
+
+    <!-- BEGIN: sweetAlert JS-->
+    <script src="sweetAlert/sweetalert2.min.js"></script>
+    <script src="sweetAlert/script.js"></script>
+    <!-- END: sweetAlert JS-->
+
+    <!-- start script hamburger radshodam-->
+    <script>
+        var forEach = function(t, o, r) {
+            if ("[object Object]" === Object.prototype.toString.call(t))
+                for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+            else
+                for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
+        };
+
+        var hamburgers = document.querySelectorAll(".hamburger");
+        if (hamburgers.length > 0) {
+            forEach(hamburgers, function(hamburger) {
+                hamburger.addEventListener("click", function() {
+                    this.classList.toggle("is-active");
+                }, false);
+            });
+        }
+    </script>
+
+    <!-- End hamburger radshodam-->
+    <!-- start for scrollTop radshodam -->
+    <script>
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+
+            } else {
+                $('nav').removeClass('black');
+
+
+            }
+        })
+    </script>
+    <script>
+        document.ready(function() {
+            document.getElementById("address").placeholder = "آدرس";
+
+        })
+
+        function chooseTitle() {
+            var title_select = document.getElementById('title_select').value;
+            var title = document.getElementById('title');
+            title.value = title_select;
+            title.innerHTML = title_select;
+            // console.log(title.value);
+            //probably needs innerHTML
+
+            var message_select = document.getElementById('message_select');
+            var message = document.getElementById('message');
+            var unit = document.getElementById('unit');
+            var follow_emp = document.getElementById('follow_emp');
+
+            $.get('/operator/new/title', {
+                title: title_select
+            }, function(resp) {
+                //console.log(resp);
+                let l = resp.length;
+
+                for (var j = 0; j < message_select.length; j++) {
+                    for (var k = 0; k < message_select.length; k++) {
+                        message_select.options[j] = null;
+                        message_select.options[k] = null;
+                    }
+                }
+                for (var i = 0; i < l; i++) {
+                    //console.log(resp[i]['Description']);
+                    let option = document.createElement('option');
+                    option.text = resp[i]['Description'];
+                    option.value = resp[i]['Description'];
+                    message_select.add(option);
+                }
+                message.value = resp[0]['Description'];
+                message.innerHTML = resp[0]['Description'];
+                unit.selectedIndex = resp[0]['Unit_Code'];
+                chooseEmy();
+            });
+        }
+
+        function chooseMessg() {
+            var message_select = document.getElementById('message_select').value;
+            var message = document.getElementById('message');
+
+            message.value = message_select;
+            message.innerHTML = message_select;
+
+            var unit = document.getElementById('unit');
+
+            $.get('/operator/new/message', {
+                msg: message_select
+            }, function(resp) {
+                console.log(resp[0]['Unit_Code']);
+                unit.selectedIndex = resp[0]['Unit_Code'];
+                chooseEmy();
+            });
+        }
+
+        function chooseEmy() {
+            var unit = document.getElementById('unit').value;
+            var follow_emp = document.getElementById('follow_emp');
+            for (var j = 0; j < follow_emp.length; j++) {
+                for (var k = 0; k < follow_emp.length; k++) {
+                    follow_emp.options[j] = null;
+                    follow_emp.options[k] = null;
+                }
+            }
+            $.get('/operator/new/employee', {
+                unit: unit
+            }, function(resp) {
+                var ln = resp.length;
+                console.log(resp);
+                for (var i = 0; i < ln; i++) {
+                    var option = document.createElement("option");
+                    option.text = resp[i]['Operator_Name'];
+                    option.value = resp[i]['Operator_Code'];
+                    follow_emp.add(option);
+                }
+            });
+        }
+    </script>
+    <!-- BEGIN: sweetAlert JS-->
+    <script>
+        function uploadImg() {
+            var p = document.getElementById('reqCode').value;
+
+            var fd = new FormData();
+
+            var img1 = $('#file1')[0].files[0];
+            fd.append('img1', img1);
+
+            var img2 = $('#file2')[0].files[0];
+            fd.append('img2', img2);
+
+            var img3 = $('#file3')[0].files[0];
+            fd.append('img3', img3);
+
+            var img4 = $('#file4')[0].files[0];
+            fd.append('img4', img4);
+
+
+            fd.append('imgCode', p);
+
+
+            /* let imgForm = document.getElementById('imgForm');
+             let formData = new FormData(imgForm);*/
+
+            console.log(fd);
+
+            $.ajax({
+                url: '/sabt/uploadImg',
+                type: 'post',
+                data: fd,
+                contentType: false,
+                processData: false,
+                success: function(s) {
+                    console.log(s.message);
+                },
+                error: function(e) {
+                    console.log(e);
+                }
+
+            });
+        }
+
+        function sabtDarkhast() {
+            var reqCode = document.getElementById('reqCode').value;
+            var name = document.getElementById('name').value;
+            var cell = document.getElementById('cell').value;
+            var phone = document.getElementById('phone').value;
+            var title = document.getElementById('title').value;
+            var message = document.getElementById('message').value;
+            var address = document.getElementById('address').value;
+
+            // console.log(reqCode, name, cell, phone,title,message,address,unit,follow_emp,priority);
+            val = {
+                reqCode: reqCode,
+                name: name,
+                cell: cell,
+                phone: phone,
+                title: title,
+                message: message,
+                address: address,
+
+            };
+            console.log(val);
+            $.ajax({
+                url: '/sabt/send',
+                type: 'post',
+                dataType: 'json',
+                data: val,
+                success: function(s) {
+                    console.log('yeeeeees');
+                    uploadImg();
+                    // location.replace('/operator/send');
+                    accept();
+                    // setTimeout("location.href = '/operator/new';", 2000);
+
+                    // console.log(s);
+
+                }
+            });
+        }
+
+
+        $("#file1").on('change', function() {
+
+            if (typeof(FileReader) != "undefined") {
+
+                var image_holder = $("#image-holder1");
+                image_holder.empty();
+
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $("<img />", {
+                        "src": e.target.result,
+                        "class": "thumb-image"
+                    }).appendTo(image_holder);
+
+                }
+                image_holder.show();
+                reader.readAsDataURL($(this)[0].files[0]);
+            } else {
+                alert("This browser does not support FileReader.");
+            }
+        });
+
+        $("#file2").on('change', function() {
+
+            if (typeof(FileReader) != "undefined") {
+
+                var image_holder = $("#image-holder2");
+                image_holder.empty();
+
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $("<img />", {
+                        "src": e.target.result,
+                        "class": "thumb-image"
+                    }).appendTo(image_holder);
+
+                }
+                image_holder.show();
+                reader.readAsDataURL($(this)[0].files[0]);
+            } else {
+                alert("This browser does not support FileReader.");
+            }
+        });
+
+        $("#file3").on('change', function() {
+
+            if (typeof(FileReader) != "undefined") {
+
+                var image_holder = $("#image-holder3");
+                image_holder.empty();
+
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $("<img />", {
+                        "src": e.target.result,
+                        "class": "thumb-image"
+                    }).appendTo(image_holder);
+
+                }
+                image_holder.show();
+                reader.readAsDataURL($(this)[0].files[0]);
+            } else {
+                alert("This browser does not support FileReader.");
+            }
+        });
+
+        $("#file4").on('change', function() {
+
+            if (typeof(FileReader) != "undefined") {
+
+                var image_holder = $("#image-holder4");
+                image_holder.empty();
+
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $("<img />", {
+                        "src": e.target.result,
+                        "class": "thumb-image"
+                    }).appendTo(image_holder);
+
+                }
+                image_holder.show();
+                reader.readAsDataURL($(this)[0].files[0]);
+            } else {
+                alert("This browser does not support FileReader.");
+            }
+        });
+    </script>
+</body>
+
+
+<!-- Mirrored from shahrdari.sarvinaa.ir/sabt by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Oct 2020 07:15:45 GMT -->
+
+</html>
